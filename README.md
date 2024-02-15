@@ -15,3 +15,59 @@
 * As a frequent user, I would like to be able to see the ratings of each suggestions so that I can be able to make decision.
 * As a frequent user, I would like to be able to save my generated date ideas for future references.
 * As a frequent user, I would like to be able to see ideas based on my locations.
+
+## Wireframes
+
+To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
+We have used [Balsamiq](https://balsamiq.com/wireframes) to design the wireframes.
+
+### Mobile Wireframes
+
+<details>
+<summary> Click here to see the Mobile Wireframes </summary>
+
+Hero Page
+  - ![screenshot](documentation/hero-mobile.png)
+
+Form Page
+  - ![screenshot](documentation/form-mobile.png)
+
+Results Page
+  - ![screenshot](documentation/results-mobile.png)
+
+
+</details>
+
+### Tablet Wireframes
+
+<details>
+<summary> Click here to see the Tablet Wireframes </summary>
+
+Hero Page
+  - ![screenshot](documentation/hero-tablet.png)
+
+Form Page
+  - ![screenshot](documentation/form-tablet.png)
+
+Results page
+  - ![screenshot](documentation/results-tablet.png)
+
+
+</details>
+
+
+### Desktop Wireframes
+
+<details>
+<summary> Click here to see the Desktop Wireframes </summary>
+
+Hero Page
+  - ![screenshot](documentation/hero-desktop.png)
+
+Form Page
+  - ![screenshot](documentation/form-desktop.png)
+
+Results Page
+  - ![screenshot](documentation/results-desktop.png)
+
+</details>
