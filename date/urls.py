@@ -1,6 +1,6 @@
 from django.urls import path
-from date.views import *
+from . import views
 
 urlpatterns = [
-    path('', index, name='index')
+path('', views.home, name='home'),
 ]
