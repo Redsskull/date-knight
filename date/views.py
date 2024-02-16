@@ -1,5 +1,5 @@
 from django.shortcuts import redirect, render
-
+from django.contrib import messages
 from .forms import DateIdeaForm
 from .models import DateIdea
 
@@ -9,21 +9,28 @@ from .models import DateIdea
 
 
 def home(request):
-    return render(request, "index.html", {"form": DateIdeaForm()})
-
-
-def date_ideas(request):
+    date_ideas = None
     if request.method == "POST":
         form = DateIdeaForm(request.POST)
         if form.is_valid():
             form_data = form.cleaned_data
             print(form_data)
-            # Implement a logic that create the date idea/s based on the form_data
+            date_ideas = DateIdea.get_matching_ideas(
+                budget=form_data['budget'],
+                place=form_data['place'],
+                time=form_data['time']  # use 'time' instead of 'preferences'
+            )
+            print(date_ideas) 
+            if not date_ideas:
+                messages.info(request, 'No date ideas found matching your preferences. Showing all ideas.')
+                date_ideas = DateIdea.objects.all()  # fallback to all date ideas
+        else:
+            print(form.errors)
+            messages.error(request, 'There was an error with the form.')
+    else:
+        form = DateIdeaForm()
+        print(form.fields['budget'].choices)  # add this line
+        print(form.fields['place'].choices)  # add this line
+        print(form.fields['time'].choices)  # add this line
 
-            # While we don't have the logic we'll just return first 2 date ideas
-            date_ideas = DateIdea.objects.all()[:2]
-            return render(request, "date_ideas.html", {"date_ideas": date_ideas})
-        
-    # If the form is not valid, we'll just return the home page
-    # or we can implement a logic to show the errors
-    return redirect("home")
+    return render(request, "index.html", {"form": form, "date_ideas": date_ideas})
