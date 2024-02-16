@@ -4,6 +4,10 @@ from django.db import models
 class Preference(models.Model):
     name = models.CharField(max_length=100)
 
+    def __str__(self):
+        return self.name
+
+
 class DateIdea(models.Model):
     BUDGET_CHOICES = (
         (1, 'Low'),
@@ -23,6 +27,7 @@ class DateIdea(models.Model):
     description = models.TextField()
     budget = models.SmallIntegerField(choices=BUDGET_CHOICES)
     place = models.CharField(max_length=200, choices=PLACE_CHOICES)
-    preferences = models.ManyToManyField(Preference, related_name="date_ideas", blank=True, null=True)
+    preferences = models.ManyToManyField(Preference, related_name="date_ideas")
 
-    
+    def __str__(self):
+        return self.name

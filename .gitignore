@@ -1,3 +1,4 @@
 env.py
 .vscodee
 __pycache__/
+venv/
