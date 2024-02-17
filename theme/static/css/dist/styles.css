@@ -922,6 +922,10 @@ select {
   max-width: 1280px;
 }
 
+.max-w-24 {
+  max-width: 6rem;
+}
+
 .translate-y-\[-250px\] {
   --tw-translate-y: -250px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1340,6 +1344,10 @@ select {
 @media (min-width: 768px) {
   .md\:min-w-\[650px\] {
     min-width: 650px;
+  }
+
+  .md\:min-w-\[500px\] {
+    min-width: 500px;
   }
 
   .md\:max-w-\[650px\] {
