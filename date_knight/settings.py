@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-b@sygnrufk)szw8apjos-ep)s4j=jr21ugzecsene(2-e=o9@1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+DEBUG='True'
 
 ALLOWED_HOSTS = ['dateknight-38b25c76684e.herokuapp.com']
 
@@ -79,7 +79,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-if DEBUG:
+ENABLE_LIVE_RELOAD = os.environ.get('ENABLE_LIVE_RELOAD', 'False') == 'True'
+
+if ENABLE_LIVE_RELOAD:
     # Enable live reload
     MIDDLEWARE.append('django_browser_reload.middleware.BrowserReloadMiddleware')
 
