@@ -15,31 +15,44 @@
         {% tailwind_css %}
         <link rel="stylesheet" type="text/css" href="{% static 'date/styles.css' %}">
     </head>
-    <body class="bg-rose-200">
 
+    <body class="bg-rose-100">
         <!-- Hero image -->
         <section 
             class="h-screen bg-cover bg-no-repeat max-h-[450px] bg-center bg-[url('../static/date/images/couple-on-date.jpeg')]" 
             style="background-image: url('../static/date/images/couple-on-date.jpeg');">
         </section>
 
-        <!-- Form -->
         {% if messages %}
             <ul class="messages">
                 {% for message in messages %}
-                    <li{% if message.tags %} class="p-2 mb-2 bg-pink-600 text-white rounded"{% endif %}>{{ message }}</li>
+                    <li{% if message.tags %} class="p-2 mb-2 bg-rose-500 text-white rounded"{% endif %}>{{ message }}</li>
                 {% endfor %}
             </ul>
         {% endif %}
         {% block content %}
-            <div class="flex justify-center items-center h-screen">
-                <div class="bg-white p-6 rounded-lg shadow-2xl">
-                    <h1 class="text-3xl font-bold mb-2 text-pink-600">DateKnight</h1>
+            <!-- Form container -->
+            <section class="flex justify-center items-center h-screen md:max-w-[650px] m-auto">
+                <div class="bg-white py-7 px-5 rounded-lg shadow-2xl md:py-16 md:px-10 translate-y-[-250px]">
+                    
+                    <!-- Title & description -->
+                    <h1 class="text-4xl font-bold mb-3.5 text-center text-rose-500">
+                        DateKnight
+                    </h1>
+                    <!-- Resource: emojis: https://www.htmlsymbols.xyz/unicode/U+2728 -->
+                    <p class="text-gray-600 text-xl text-center mb-3.5">
+                        First dates made effortless, sparks guaranteed! &#10024;
+                        Select the budget, place and time that your needs and we'll build your
+                        perfect first date! &#x1F495;
+                    </p>
+
+                    <!-- Form -->
                     <form method="post" class="space-y-4">
                         {% csrf_token %}
                         {{ form.as_p }}
                         <button type="submit" class="px-4 py-2 bg-pink-600 text-white rounded hover:bg-pink-700">Find Date Ideas</button>
                     </form>
+
                     {% if date_ideas %}
                         <h2 class="text-2xl font-bold mb-2 mt-4 text-pink-600">Date Ideas</h2>
                         <ul class="list-disc list-inside space-y-2">
@@ -48,8 +61,9 @@
                             {% endfor %}
                         </ul>
                     {% endif %}
+
                 </div>
-            </div>
+            </section> <!-- end form-section -->
         {% endblock %}
     </body>
 </html>
