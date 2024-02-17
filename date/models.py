@@ -20,11 +20,11 @@ class DateIdea(models.Model):
         ('night', 'Night'),
     ]
 
-    name = models.CharField(max_length=200)
-    description = models.TextField()
-    budget = models.IntegerField(choices=BUDGET_CHOICES, default=1)
-    place = models.CharField(max_length=50, choices=PLACE_CHOICES, default='park')
-    time = models.CharField(max_length=50, choices=TIME_CHOICES, default='day')
+    name = models.CharField(max_length=200, db_index=True)
+    description = models.TextField(db_index=True)
+    budget = models.IntegerField(choices=BUDGET_CHOICES, default=1, db_index=True)
+    place = models.CharField(max_length=50, choices=PLACE_CHOICES, default='park', db_index=True)
+    time = models.CharField(max_length=50, choices=TIME_CHOICES, default='day', db_index=True)
 
     @classmethod
     def get_matching_ideas(cls, budget, place, time):
