@@ -35,6 +35,8 @@ ALLOWED_HOSTS = ['dateknight-38b25c76684e.herokuapp.com']
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 
+os.environ['NEW_RELIC_CONFIG_FILE'] = '/c/Users/Redsskull/Documents/Programming/date-knight/newrelic.ini'
+
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
