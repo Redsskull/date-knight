@@ -4,6 +4,13 @@
     margin-right: 5px;
 }
 
+.hero-image {
+    background-image: url('../images/couple-on-date.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 #date-form input[type="radio"] {
     border-color: #fda4af;
 }
