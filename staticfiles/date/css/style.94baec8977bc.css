@@ -1,0 +1,48 @@
+#date-form input[type="radio"] {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+/* .hero-image{
+    background-image: url("../images/couple-on-date.1e1d309afbe1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+
+#date-form input[type="radio"] {
+    border-color: #fda4af;
+}
+
+#date-form input[type="radio"]:not(:disabled):checked {
+    background-color: #Fff1f2;
+    background-clip: content-box;
+    padding: 2px;
+    background-image: radial-gradient(
+        circle,
+        var(--radio-checked-color) 0%,
+        var(--radio-checked-color) 50%,
+        transparent 60%,
+        transparent 100%
+    )
+}
+
+#date-form p {
+    font-weight: 500;
+    color: #f43f5e;
+    font-size: 18px;
+}
+
+#id_budget, #id_place, #id_time {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+}
+
+#id_budget, #id_place, #id_time label {
+    color: rgb(75 85, 99);
+    font-weight: 400;
+    font-size: 16px;
+}
