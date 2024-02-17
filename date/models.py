@@ -44,7 +44,7 @@ class DateIdea(models.Model):
         ]
         for match in two_criteria_matches:
             if match.exists():
-                return match
+                return match.distinct()
 
         # Try to match any one criterion
         one_criterion_matches = [
@@ -54,7 +54,7 @@ class DateIdea(models.Model):
         ]
         for match in one_criterion_matches:
             if match.exists():
-                return match
+                return match.distinct()
 
         # If no matches are found, return an empty QuerySet
         return cls.objects.none()
