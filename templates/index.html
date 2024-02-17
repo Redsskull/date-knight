@@ -33,7 +33,7 @@
         {% block content %}
             <!-- Form container -->
             <section class="flex justify-center items-center h-screen md:max-w-[650px] m-auto">
-                <div class="bg-white py-7 px-5 rounded-lg shadow-2xl md:py-16 md:px-10 translate-y-[-250px]">
+                <div class="bg-white py-7 px-5 rounded-lg shadow-2xl md:py-16 md:px-10 translate-y-[-200px]">
                     
                     <!-- Title & description -->
                     <h1 class="text-4xl font-bold mb-3.5 text-center text-rose-500">
@@ -47,7 +47,7 @@
                     </p>
 
                     <!-- Form -->
-                    <form method="post" class="space-y-4">
+                    <form method="post" class="space-y-4 p-5" id="date-form">
                         {% csrf_token %}
                         {{ form.as_p }}
                         <button type="submit" class="uppercase text-white py-4 px-10 rounded-md m-auto block font-bold bg-rose-500 hover:bg-rose-400 hover:transition ease-in-out delay-100">Find Date Ideas</button>
@@ -67,3 +67,61 @@
         {% endblock %}
     </body>
 </html>
+
+
+<!-- <script>
+
+    var dateForm = document.getElementById("date-form");
+    var dateFormHeadings = dateForm.querySelectorAll("p");
+
+    for (let i = 0; i < dateFormHeadings.length; i++) {
+        dateFormHeadings[i].classList.add("text-rose-500", "font-bold", "mb-3.5", "md:text-lg");
+    }
+
+</script> -->
+
+
+<style>
+    #date-form input[type="radio"] {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    #date-form input[type="radio"] {
+        border-color: #fda4af;
+    }
+
+    #date-form input[type="radio"]:not(:disabled):checked {
+        background-color: #Fff1f2;
+        background-clip: content-box;
+        padding: 2px;
+        background-image: radial-gradient(
+            circle,
+            var(--radio-checked-color) 0%,
+            var(--radio-checked-color) 50%,
+            transparent 60%,
+            transparent 100%
+        );
+    }
+
+    #date-form p {
+        font-weight: 500;
+        color: #f43f5e;
+        font-size: 18px;
+    }
+
+    #id_budget, #id_place, #id_time {
+        display: flex;
+        margin-bottom: 10px;
+        align-items: flex-start;
+        column-gap: 20px;
+    }
+
+    #id_budget, #id_place, #id_time label {
+        color: rgb(75 85, 99);
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+</style>
