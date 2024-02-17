@@ -32,7 +32,7 @@
         {% endif %}
         {% block content %}
             <!-- Form container -->
-            <section class="flex justify-center items-center h-screen md:max-w-[650px] m-auto">
+            <section class="flex justify-center items-center md:max-w-[650px] m-auto">
                 <div class="bg-white py-7 px-5 rounded-lg shadow-2xl md:py-16 md:px-10 translate-y-[-200px] mb-[-200px]">
                     
                     <!-- Title & description -->
@@ -47,20 +47,39 @@
                     </p>
 
                     <!-- Form -->
-                    <form method="post" class="space-y-4 p-5" id="date-form">
+                    <form method="post" class="space-y-6 p-5" id="date-form">
                         {% csrf_token %}
                         {{ form.as_p }}
-                        <button type="submit" class="uppercase text-white py-4 px-10 rounded-md m-auto block font-bold bg-rose-500 hover:bg-rose-400 hover:transition ease-in-out delay-100">Find Date Ideas</button>
+                        <button type="submit" class="uppercase text-white py-4 px-10 rounded-md m-auto block font-bold bg-rose-500 hover:bg-rose-400 hover:transition ease-in-out delay-100">
+                            Find Date Ideas
+                        </button>
                     </form>
 
                     {% if date_ideas %}
-                        <h2 class="text-2xl font-bold mb-2 mt-4 text-pink-600">Date Ideas</h2>
+                    <!-- Results -->
+                    <div class="mt-9">
+                        <h2 class="text-2xl font-bold mb-4 text-rose-500">Date Ideas</h2>
+                        <div class="list-disc list-inside space-y-2 grid grid-cols-2 gap-5">
+                            {% for idea in date_ideas %}
+                                <div class="bg-rose-50 p-5">
+                                    <h2 class="font-bold text-gray-700 text-lg mb-4">&#128161; {{ idea.name }}</h2>
+                                    <p class="text-gray-600 px-3">{{ idea.description }}</p>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    <!--
+                    {% if date_ideas %}
+                        <h2 class="text-2xl font-bold mb-2 mt-4 text-rose-500">Date Ideas</h2>
                         <ul class="list-disc list-inside space-y-2">
                             {% for idea in date_ideas %}
-                                <li class="text-pink-800">{{ idea.name }}: {{ idea.description }}</li>
+                                <li class="text-gray-500">{{ idea.name }}: {{ idea.description }}</li>
                             {% endfor %}
                         </ul>
                     {% endif %}
+                    -->
 
                 </div>
             </section> <!-- end form-section -->
@@ -137,7 +156,7 @@
 
     #id_budget, #id_place, #id_time {
         display: flex;
-        margin-bottom: 10px;
+        /* margin-bottom: 20px; */
         align-items: flex-start;
         column-gap: 20px;
     }
