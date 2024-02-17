@@ -50,7 +50,7 @@
                     <form method="post" class="space-y-6 p-5" id="date-form">
                         {% csrf_token %}
                         {{ form.as_p }}
-                        <button type="submit" class="uppercase text-white py-4 px-10 rounded-md m-auto block font-bold bg-rose-500 hover:bg-rose-400 hover:transition ease-in-out delay-100">
+                        <button type="submit" class="submit-button uppercase text-white py-4 px-10 rounded-md m-auto block font-bold bg-rose-500 hover:bg-rose-400 hover:transition ease-in-out delay-100">
                             Find Date Ideas
                         </button>
                     </form>
@@ -122,6 +122,19 @@
 
 
 
+<script>
+
+    // Add emojis to form headings
+    var dateForm = document.getElementById("date-form");
+    var formHeadings = dateForm.querySelectorAll("p > label");
+
+    for (let i = 0; i < formHeadings.length; i++) {
+        formHeadings[0].innerHTML = "&#128182; Budget:";
+        formHeadings[1].innerHTML = "&#127965; Place:";
+        formHeadings[2].innerHTML = "&#x23F0; Time:";
+    }
+
+</script>
 
 
 <style>
