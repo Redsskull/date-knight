@@ -29,6 +29,9 @@ class DateIdea(models.Model):
     place = models.CharField(max_length=50, choices=PLACE_CHOICES, default='city', db_index=True)
     time = models.CharField(max_length=50, choices=TIME_CHOICES, default='day', db_index=True)
 
+    class Meta:
+       unique_together = ['name', 'description', 'budget', 'place', 'time']
+
     @classmethod
     def get_matching_ideas(cls, budget, place, time):
     # Try to match all three criteria
@@ -197,3 +200,4 @@ def create_default_date_ideas(sender, **kwargs):
     if sender.name == 'date':
         for idea in date_ideas:
             DateIdea.objects.get_or_create(**idea)
+
