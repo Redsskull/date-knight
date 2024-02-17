@@ -15,7 +15,15 @@
         {% tailwind_css %}
         <link rel="stylesheet" type="text/css" href="{% static 'date/styles.css' %}">
     </head>
-    <body class="bg-pink-200">
+    <body class="bg-rose-200">
+
+        <!-- Hero image -->
+        <section 
+            class="h-screen bg-cover bg-no-repeat max-h-[450px] bg-center bg-[url('../static/date/images/couple-on-date.jpeg')]" 
+            style="background-image: url('../static/date/images/couple-on-date.jpeg');">
+        </section>
+
+        <!-- Form -->
         {% if messages %}
             <ul class="messages">
                 {% for message in messages %}

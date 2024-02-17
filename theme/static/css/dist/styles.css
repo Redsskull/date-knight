@@ -763,6 +763,14 @@ select {
   height: 100vh;
 }
 
+.max-h-\[500px\] {
+  max-height: 500px;
+}
+
+.max-h-\[450px\] {
+  max-height: 450px;
+}
+
 .list-inside {
   list-style-position: inside;
 }
@@ -812,6 +820,44 @@ select {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-rose-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 164 175 / var(--tw-bg-opacity));
+}
+
+.bg-rose-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 205 211 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\.\/static\/date\/images\/couple-on-date\.jpeg\'\)\] {
+  background-image: url('../static/date/images/couple-on-date.jpeg');
+}
+
+.bg-\[url\(\'\/images\/couple-on-date\.jpeg\'\)\] {
+  background-image: url('/images/couple-on-date.jpeg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-2 {
