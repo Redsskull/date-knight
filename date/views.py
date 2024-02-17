@@ -34,3 +34,6 @@ def home(request):
         print(form.fields['time'].choices)  # add this line
 
     return render(request, "index.html", {"form": form, "date_ideas": date_ideas})
+
+def about(request):
+    return render(request, 'about.html')
