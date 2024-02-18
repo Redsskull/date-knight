@@ -159,7 +159,7 @@ Mika is a nurse transitioning to software development. She is early in the proce
 
 ### [Yagavi](www.linkedin.com/in/yagavi-kannadhasan-7538409b)
 
-Amy is a former Maths teacher transitioning to software development. She enjoys the problem-solving and creative aspects of Maths and hopes to apply this love to the field of programming and web applications. Amy is early in this transition but has been able to design and code the team’s “About Us” page as well as being on-hand to contribute to project ideas
+Yagavi is a dedicated stay-at-home mom who has always harboured a deep passion for coding. She thrives in collaborative environments, making her an excellent team player. With her unwavering determination and newfound skills, she aspires to carve out a successful career in coding, showcasing the perfect blend of maternal warmth and technical prowess. Yagavi was a great team player on this project and injected her style and ideas into this project.
 
 ## Acknowledgement 
 - We are grateful for Code Institute Hackathon team for facilitating this event and allowing a great team to form.
