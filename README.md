@@ -1,4 +1,6 @@
-# Date-Knight
+# [Date Knight](https://dateknight-38b25c76684e.herokuapp.com/)
+
+![screenshot](documentation/mockup.png)
 
  **The Date Knight *saving* you from your boring dates!**
  
