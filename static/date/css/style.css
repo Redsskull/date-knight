@@ -11,8 +11,9 @@
     height: fit-content;
     background-image: linear-gradient(to right, rgb(246, 240, 240) , rgb(224, 122, 165));
     position: fixed;
-    box-shadow: 0px 2px 2px rgb(103, 102, 102);
+    /* box-shadow: 0px 2px 2px rgb(103, 102, 102); */
     z-index: 2;
+    padding: 10px 15px;
 }
 #logo-bar {
     display: flex;
@@ -21,19 +22,14 @@
     align-items: flex-start;
     justify-content: center;
 }
-#logo-bar img{
-    width: 50vw;
-    height: 30vw;
-    object-fit: contain;
-    max-width: 200px;
-    max-height: 150px;
+#logo-bar img {
+    object-fit: cover;
+    max-width: 100px;
+    max-height: 70px;
 }
 #logo-slogan p {
-    margin-bottom: 10px;
     letter-spacing: 2px;
-    font-size: 100%;
-    margin: 0 0 30px 15px;
-    line-height: 0px;
+    font-size: 14px;
     font-weight: 300;
     font-family: 'Karla', sans-serif;
 }
@@ -75,24 +71,37 @@
 #id_budget, #id_place, #id_time {
     display: flex;
     align-items: flex-start;
-    column-gap: 20px;
+    column-gap: 15px;
 }
 
 #id_budget, #id_place, #id_time label {
     color: rgb(75 85, 99);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
 
 
 
-/*--------- Media Queries ---------*/
+/* --------- Media Queries --------- */
 
 @media screen and (min-width: 768px) {
+    #logo-bar {
+        padding: 10px 50px;
+    }
+    #logo-bar img {
+        max-width: 150px;
+        max-height: 100px;
+    }
     #logo-slogan p {
-      font-size: 150%;
+        font-size: 18px;
+    }
+    
+    #id_budget, #id_place, #id_time {
+        column-gap: 20x;
+    }
+    #id_budget, #id_place, #id_time label {
+        font-size: 16px;
     }
 }
-

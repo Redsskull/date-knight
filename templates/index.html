@@ -36,7 +36,7 @@
         <!-- Hero image -->
         <!-- Resource: https://www.pexels.com/photo/man-in-black-long-sleeve-shirt-sitting-on-chair-4255484/ -->
         <section 
-            class="h-screen object-cover bg-cover bg-no-repeat max-h-[650px] bg-top" 
+            class="h-screen object-cover bg-cover bg-no-repeat h-[400px] md:min-h-[600px] md:max-h-[650px]" 
             style="background-image: url('{% static 'date/images/couple-on-date.jpeg' %}');">
         </section>
 
@@ -51,18 +51,18 @@
         {% block content %}
             <!-- Form container -->
             <section class="flex justify-center items-center md:max-w-[650px] m-auto">
-                <div class="bg-white py-7 px-5 rounded-lg shadow-2xl md:py-16 md:px-10 translate-y-[-200px] mb-[-200px]">
+                <div class="bg-white rounded-lg shadow-2xl py-9 px-5 md:py-16 md:px-10 md:translate-y-[-200px] md:mb-[-200px]">
                     <h1 class="text-4xl font-bold mb-3.5 text-center text-rose-500">
                         DateKnight
                     </h1>
                     <!-- Resource: emojis - https://www.htmlsymbols.xyz/unicode/U+2728 -->
-                    <p class="text-gray-600 text-lg text-center mb-3.5">
-                        First dates made effortless, sparks guaranteed! &#10024; <br>
+                    <p class="text-gray-600 text-lg text-center mb-3.5 max-w-[450px] m-auto">
+                        First dates made effortless, sparks guaranteed! &#10024;
                         Select the budget, place and time that your needs and we'll build your
                         perfect first date! &#x1F495;
                     </p>
                     <!-- Form -->
-                    <form method="post" class="space-y-6 p-5" id="date-form">
+                    <form method="post" class="space-y-6 max-w-[500px] m-auto" id="date-form">
                         {% csrf_token %}
                         {{ form.as_p }}
                         <button type="submit" class="submit-button uppercase text-white py-4 px-10 rounded-md m-auto block font-bold bg-rose-500 hover:bg-rose-400 hover:transition ease-in-out delay-100">
@@ -73,7 +73,15 @@
                     {% if date_ideas %}
                         <div class="mt-9">
                             <h2 class="text-2xl font-bold mb-4 text-rose-500">Date Ideas</h2>
-                            <div class="list-disc list-inside space-y-2 grid grid-cols-2 gap-5">
+                            <div class="space-y-2 grid gap-2 md:gap-5 md:grid-cols-2">
+                                <!-- 
+                                    <div class="mt-9" id="date-ideas-container">
+                                        <h2 class="text-2xl font-bold mb-4 text-rose-500">Date Ideas:</h2>
+                                        <div class="list-disc list-inside space-y-2 grid grid-cols-2 gap-5" id="date-ideas-list">
+                                            // Date ideas will be inserted here by the JavaScript code
+                                        </div>
+                                    </div>
+                                -->
                                 {% for idea in date_ideas %}
                                     <div class="bg-rose-50 p-5">
                                         <h2 class="font-bold text-gray-700 text-lg mb-4">&#128161; {{ idea.name }}</h2>
