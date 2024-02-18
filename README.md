@@ -128,14 +128,17 @@ We have generated possible date ideas based on user choices:
 - [PostgreSQL](https://www.postgresql.org/docs/15/install-procedure.html) used for online database.
 - [Google Sheets](https://docs.google.com/spreadsheets/u/0/create) to draw a table for generated ideas.
 
+## Credit
+### Media 
+- [Pexels](https://www.pexels.com/photo/man-in-black-long-sleeve-shirt-sitting-on-chair-4255484/) - Hero Image
 
 ## Contributors
 
-- [Nate](https://github.com/Redsskull)
-- [Dima](https://github.com/Dima-Bulavenko)
-- [Jessica](https://github.com/JessicaJuliet)
-- [Amy](https://github.com/AmyB173)
-- [Mikaela](https://github.com/mikavir)
-- [Yagavi](https://github.com/Yagavi1994)
+- [Nate](https://www.linkedin.com/in/redsskull/)
+- [Dima](https://www.linkedin.com/in/dima-bulavenko-07a162239/)
+- [Jessica](https://www.linkedin.com/in/jessicaakomfrah/)
+- [Amy](https://www.linkedin.com/in/amy-bergstrom-068a26297/)
+- [Mikaela](https://www.linkedin.com/in/mikaela-virtucio/)
+- [Yagavi](www.linkedin.com/in/yagavi-kannadhasan-7538409b)
 
 ## Acknowledgement 
