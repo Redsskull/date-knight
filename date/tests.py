@@ -27,3 +27,9 @@ class DateIdeaTestCase(TestCase):
         self.assertEqual(entry_with_default_fields.budget, 1)
         self.assertEqual(entry_with_default_fields.place, "city")
         self.assertEqual(entry_with_default_fields.time, "day")
+
+    def test_str(self):
+        test_idea = DateIdea.objects.get(name="Test Idea")
+
+        self.assertEqual(str(test_idea), "Test Idea")
+    
