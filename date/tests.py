@@ -1,5 +1,6 @@
 from django.test import TestCase
 from date.models import DateIdea
+from django.db.utils import IntegrityError
 
 
 class DateIdeaTestCase(TestCase):
@@ -32,4 +33,13 @@ class DateIdeaTestCase(TestCase):
         test_idea = DateIdea.objects.get(name="Test Idea")
 
         self.assertEqual(str(test_idea), "Test Idea")
-    
+
+    def test_unique_together(self):
+        with self.assertRaises(IntegrityError):
+            DateIdea.objects.create(
+            name="Test Idea",
+            description="This is a test idea",
+            budget=1,
+            place="city",
+            time="day",
+        )
