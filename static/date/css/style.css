@@ -1,23 +1,52 @@
+/* --------- Navbar --------- */
+
+#logo-bar {
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(to right, rgb(246, 240, 240) , rgb(224, 122, 165));
+    position: fixed;
+    z-index: 2;
+    padding: 10px 15px;
+}
+
+#logo-bar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#logo-bar img {
+    object-fit: cover;
+    max-width: 100px;
+    max-height: 70px;
+}
+
+#logo-slogan p {
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Karla', sans-serif;
+}
+
+
+
+  
+/* --------- Form --------- */
+
 #date-form input[type="radio"] {
     width: 30px;
     height: 30px;
     margin-right: 5px;
 }
 
-/* .hero-image{
-    background-image: url('../images/couple-on-date.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
-
-
 #date-form input[type="radio"] {
     border-color: #fda4af;
 }
 
 #date-form input[type="radio"]:not(:disabled):checked {
-    background-color: #Fff1f2;
+    background-color: #fb7185;
     background-clip: content-box;
     padding: 2px;
     background-image: radial-gradient(
@@ -38,11 +67,37 @@
 #id_budget, #id_place, #id_time {
     display: flex;
     align-items: flex-start;
-    column-gap: 20px;
+    column-gap: 15px;
 }
 
 #id_budget, #id_place, #id_time label {
     color: rgb(75 85, 99);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
+}
+
+
+
+
+
+/* --------- Media Queries --------- */
+
+@media screen and (min-width: 768px) {
+    #logo-bar {
+        padding: 10px 50px;
+    }
+    #logo-bar img {
+        max-width: 150px;
+        max-height: 100px;
+    }
+    #logo-slogan p {
+        font-size: 18px;
+    }
+    
+    #id_budget, #id_place, #id_time {
+        column-gap: 20px;
+    }
+    #id_budget, #id_place, #id_time label {
+        font-size: 16px;
+    }
 }
