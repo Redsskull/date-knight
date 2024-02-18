@@ -119,7 +119,7 @@ We have generated possible date ideas based on user choices:
 | 3       | Night     | City       | Private Cruise on a River or Harbour | Charter a private yacht or luxury boat for a romantic cruise along the city's river or harbor at night. Enjoy champagne, hors d'oeuvres, and breathtaking views of the city skyline and waterfront landmarks from the comfort of your own private vessel.                                                    |
 |        |           | Countryside| Luxury Glamping Experience      | Stay in a luxurious glamping tent or private safari lodge in the countryside for a glamorous camping experience under the stars. Enjoy deluxe amenities, gourmet dining, and personalized service in a secluded and serene natural setting.                                                                               |
 |        |           | Beach      | Moonlit Sailing Excursion       | Embark on a private sailing excursion under the moonlit sky with your partner. Glide across the water in a luxury sailboat, enjoying the gentle sea breeze and breathtaking views of the moon reflecting off the water                                                                                           |
-|        |           | park       | Fireworks Display and Champagne Toast | Arrange for a private fireworks display in the park to dazzle and impress your date. Toast to your love with champagne as you watch the
+|        |           | Park       | Fireworks Display and Champagne Toast | Arrange for a private fireworks display in the park to dazzle and impress your date. Toast to your love with champagne as you watch the
 
 
 
