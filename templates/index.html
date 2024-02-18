@@ -17,10 +17,29 @@
     </head>
 
     <body class="bg-rose-100">
+
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <div id="logo-bar">
+                    <div id="logo-container">
+                        <div id="logo-image">
+                            <img src="{% static 'date/images/nav-logo.png' %}"
+                            alt="two hearts interlinked with website name below it">
+                        </div>
+                        <div id="logo-slogan">
+                            <p>Find Your Perfect Date</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
         <!-- Hero image -->
         <!-- Resource: https://www.pexels.com/photo/man-in-black-long-sleeve-shirt-sitting-on-chair-4255484/ -->
         <section 
-        class="h-screen bg-cover bg-no-repeat max-h-[450px] bg-center" style="background-image: url('{% static 'date/images/couple-on-date.jpeg' %}');">
+            class="h-screen object-cover bg-cover bg-no-repeat max-h-[650px] bg-top" 
+            style="background-image: url('{% static 'date/images/couple-on-date.jpeg' %}');">
         </section>
 
         {% if messages %}

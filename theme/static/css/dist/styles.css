@@ -864,6 +864,18 @@ select {
   max-height: 450px;
 }
 
+.max-h-\[500px\] {
+  max-height: 500px;
+}
+
+.max-h-\[550px\] {
+  max-height: 550px;
+}
+
+.max-h-\[650px\] {
+  max-height: 650px;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -994,8 +1006,21 @@ select {
   background-position: center;
 }
 
+.bg-top {
+  background-position: top;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2 {
