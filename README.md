@@ -121,10 +121,41 @@ We have generated possible date ideas based on user choices:
 |        |           | Beach      | Moonlit Sailing Excursion       | Embark on a private sailing excursion under the moonlit sky with your partner. Glide across the water in a luxury sailboat, enjoying the gentle sea breeze and breathtaking views of the moon reflecting off the water                                                                                           |
 |        |           | Park       | Fireworks Display and Champagne Toast | Arrange for a private fireworks display in the park to dazzle and impress your date. Toast to your love with champagne as you watch the
 
+## Features
 
+### Existing Features
 
+#### The Nav Bar
+The nav bar is situated in the top of the page. It consists the logo of the web application in the top-left corner. The logo on the top helps the user to identify the page and remember it.
+  - ![Screenshot](documentation/The-Nav-Bar.png)
 
+#### The Hero Image
+The hero image is located right below the Nav Bar. This image of a man and woman having a date in a restaurant helps the user to identify the core purpose of the web application which is to find perfect date ideas for them. 
+  - ![Screenshot](documentation/Hero-Image.png)
 
+#### Form
+The form which slightly overlaps the hero image has the app name on top, a brief description about how to use the form and what it does beneath it to guide the user. After which there comes three categories "Budget, Place and Time" to help the user to choose their preferences. Each category comes with multiple options to choose from it, which achieves the user purpose of making the app easy to use. And with the single click of the "Find Date Ideas" button beneath, will generate date ideas based on the user's prefernces.
+  - ![Screenshot](documentation/Form.png)
+
+#### Results
+The result generated is displayed inside a light pink rectangular box under the form with the heading "Date Ideas" to help the user know what it is about.
+  - ![Screenshot](documentation/Results.png)
+
+#### Footer
+The footer which is at the bottom of the page consists of the app logo with the name of the app next to it. The logo is repeated again at the bottom so that it helps the user to keep it in mind and identify the app with it. The footer also has two buttons which are git hub and about us buttons which when clicked takes the user to the git hub page and about us page respectively.
+  - ![Screenshot](documentation/Footer.png)
+
+#### About Us
+The about us page has an image and a brief information beneath it about each developer who worked behind this application. Sharing the informations about the developers and being transparent helps the users to build more trust. 
+  - ![Screenshot](documentation/About-Us.png)
+
+### Future Features
+- Add more preferences for the users to choose from like indoor or outdoor, distance they can travel, Interests etc,.
+- Building more database so that the user can have multiple ideas for each preferences.
+- Displaying the results in a more attractive way in carousels and also adding image to it.
+- Creating sign up and log in page for the users to create an account in the application.
+- Saving their past preferences and it's results in the user's account for references.
+- Incorporate machine learning so that users will be able to give keywords instead of predefined choices and the AI will generate personalised ideas for them.
 
 ## Tools & Technologies Used
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
