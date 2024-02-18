@@ -837,10 +837,6 @@ select {
   margin-bottom: 2.25rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .mt-24 {
   margin-top: 6rem;
 }
@@ -867,6 +863,10 @@ select {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .h-16 {
@@ -949,6 +949,14 @@ select {
 
 .list-disc {
   list-style-type: disc;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
