@@ -1342,6 +1342,10 @@ select {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
+  .md\:text-left {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1024px) {
