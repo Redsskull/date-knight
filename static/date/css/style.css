@@ -4,7 +4,7 @@
     width: 100%;
     height: fit-content;
     background-image: linear-gradient(to right, rgb(246, 240, 240) , rgb(224, 122, 165));
-    position: fixed;
+    /* position: fixed; */
     z-index: 2;
     padding: 10px 15px;
 }
@@ -76,6 +76,24 @@
     font-size: 14px;
 }
 
+#date-ideas-list div {
+    background-color: #fff1f2;
+    padding: 20px;
+}
+
+#date-ideas-list h2 {
+    font-weight: 500;
+    color: #374151;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+#date-ideas-list p {
+    color: #374151;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #4b5563;
+}
 
 
 

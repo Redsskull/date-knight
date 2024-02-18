@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 import os
 from pathlib import Path
-import dj_database_url
+# import dj_database_url
 from django.contrib.messages import constants as messages
 
 if os.path.exists("env.py"):
@@ -65,7 +65,7 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
+NPM_BIN_PATH = "/usr/local/bin/npm"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -111,17 +111,17 @@ WSGI_APPLICATION = 'date_knight.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-if 'DEV' in os.environ:
-     DATABASES = {
-         'default': {
-             'ENGINE': 'django.db.backends.sqlite3',
-             'NAME': BASE_DIR / 'db.sqlite3',
-         }
-     }
-else:
-     DATABASES = {
-         'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-     }
+# if 'DEV' in os.environ:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+# else:
+#      DATABASES = {
+#          'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+#      }
 
 
 STATIC_URL = '/static/'
