@@ -1,4 +1,6 @@
-# Date-Knight
+# [Date Knight](https://dateknight-38b25c76684e.herokuapp.com/)
+
+![screenshot](documentation/mockup.png)
 
  **The Date Knight *saving* you from your boring dates!**
  
@@ -110,6 +112,18 @@ We have generated possible date ideas based on user choices:
 |        |          | Countryside| Country Inn or Bed and Breakfast Stay| Book a cozy room at a charming country inn or bed and breakfast in the countryside for a romantic overnight getaway. Enjoy a peaceful night's sleep in a comfortable and quaint setting, and wake up to a delicious homemade breakfast in the morning.                               |
 |        |          | Beach      | Evening Boat Cruise               | Look for a local boat tour or cruise company offering nighttime excursions along the coastline. Embark on a romantic boat ride with your partner, enjoy the sea breeze and stunning views of the shoreline, and create unforgettable memories together on the water.              |
 |        |          | Park       | Fire Pit Romance                 | If the park allows it, bring along some firewood and start a small campfire in a designated fire pit area. Roast marsh
+ 3      | Day       | City       | Fine Dining Experience          | Reserve a table at a Michelin-starred restaurant or renowned gastronomic hotspot for an exquisite fine dining experience. Enjoy a multi-course tasting menu curated by a celebrity chef, complemented by expertly paired wines and impeccable service.                                                       |
+|        |           | Countryside| Hot Air Balloon Ride            | Arrange for a private hot air balloon ride over the picturesque countryside with your partner. Enjoy breathtaking views of rolling hills, lush vineyards, and charming villages from high above, accompanied by champagne and gourmet snacks.                                                                       |
+|        |           | Beach      | Private Beach Horseback Riding  | Arrange for a private horseback riding excursion along the shoreline with your partner. Ride majestic horses along sandy beaches, through rolling dunes, and along scenic coastal trails for a romantic and unforgettable experience.                                                                                    |
+|        |           | park       | Exclusive Horse-Drawn Carriage Ride | Arrange for an exclusive horse-drawn carriage ride through the park. Snuggle up with your date as you glide through the picturesque scenery, enjoying the elegance and romance of a bygone era.                                                                                                               |
+| 3       | Night     | City       | Private Cruise on a River or Harbour | Charter a private yacht or luxury boat for a romantic cruise along the city's river or harbor at night. Enjoy champagne, hors d'oeuvres, and breathtaking views of the city skyline and waterfront landmarks from the comfort of your own private vessel.                                                    |
+|        |           | Countryside| Luxury Glamping Experience      | Stay in a luxurious glamping tent or private safari lodge in the countryside for a glamorous camping experience under the stars. Enjoy deluxe amenities, gourmet dining, and personalized service in a secluded and serene natural setting.                                                                               |
+|        |           | Beach      | Moonlit Sailing Excursion       | Embark on a private sailing excursion under the moonlit sky with your partner. Glide across the water in a luxury sailboat, enjoying the gentle sea breeze and breathtaking views of the moon reflecting off the water                                                                                           |
+|        |           | Park       | Fireworks Display and Champagne Toast | Arrange for a private fireworks display in the park to dazzle and impress your date. Toast to your love with champagne as you watch the
+
+
+
+
 
 
 ## Tools & Technologies Used
@@ -155,7 +169,7 @@ Amy is a former Maths teacher transitioning to software development. She enjoys 
 
 ### [Mikaela](https://www.linkedin.com/in/mikaela-virtucio/)
 
-Mika is a nurse transitioning to software development. She is early in the process but has already put her all into this new direction. She loves learning new, difficult things and considers herself “a programmer embracing their cognitive masochism”. Mika combines her two passions by developing projects relating to the medical field.  Mika’s enthusiasm for this project has been clear from the start and she has injected a sense of pace and movement to keep the momentum going. Mika has been on hand to design the look of the website, code the footer and write the readme.
+Mika is a nurse transitioning to software development. She has already put her all into this new direction. She loves learning new, difficult things and considers herself “a programmer embracing their cognitive masochism”. Mika combines her two passions by developing projects relating to the medical field.  Mika’s enthusiasm for this project has been clear from the start and she has injected a sense of pace and movement to keep the momentum going. Mika has been on hand to design the look of the website, code the footer and write the readme.
 
 ### [Yagavi](www.linkedin.com/in/yagavi-kannadhasan-7538409b)
 
@@ -163,4 +177,4 @@ Yagavi is a dedicated stay-at-home mom who has always harboured a deep passion f
 
 ## Acknowledgement 
 - We are grateful for Code Institute Hackathon team for facilitating this event and allowing a great team to form.
-- We are grateful for our team-mates for sharing of knowledge and expertise, as well as making the time to collobarate and finish the project.
+- We are grateful for our team-mates for sharing their knowledge and expertise, as well as making the time to collobarate and finish the project.
