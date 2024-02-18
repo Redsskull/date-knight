@@ -17,7 +17,7 @@
 }
 
 #date-form input[type="radio"]:not(:disabled):checked {
-    background-color: #Fff1f2;
+    background-color: #fb7185;
     background-clip: content-box;
     padding: 2px;
     background-image: radial-gradient(
