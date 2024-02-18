@@ -15,10 +15,9 @@
         {% tailwind_css %}
         <link rel="stylesheet" type="text/css" href="{% static 'date/css/style.css' %}">
     </head>
-    <body class="bg-pink-200">
-        <!-- Navbar -->
-        <header>
-            <nav>
+
+    <body>
+   <nav>
                 <div id="logo-bar">
                     <div id="logo-container">
                         <div id="logo-image">
@@ -32,17 +31,184 @@
                     </div>
                 </div>
             </nav>
-        </header>
-        {% if messages %}
-            <ul class="messages">
-                {% for message in messages %}
-                    <li{% if message.tags %} class="p-2 mb-2 bg-pink-600 text-white rounded"{% endif %}>{{ message }}</li>
-                {% endfor %}
-            </ul>
-        {% endif %}
-            <div class="flex justify-center items-center h-screen">
-                <div class="bg-white p-6 rounded-lg shadow-2xl">
-                    <h1 class="text-3xl font-bold mb-2 text-pink-600">DateKnight</h1>
+
+
+            <!-- About Us Cards -->
+            <div class="w-screen min-h-min flex place-content-center mb-9">
+                <div class="flex flex-wrap justify-center align-center h-min w-11/12 max-w-screen-xl bg-opacity-0"> 
+                    <div class="flex justify-center mt-24 mb-9 w-full">
+                        <!-- Hearts have been cropped from an Image by rawpixel.com on Freepik https://www.freepik.com/free-vector/collection-illustrated-heart-icons_2631990.htm#query=hearts&position=6&from_view=search&track=sph&uuid=5eb64a63-9d60-447d-b3d3-09d0ff8df285 -->
+                        <h1 class=" flex text-center text-4xl sm:text-6xl p-6 font-bold bg-white"><img src="{% static 'date/images/heart-1.png' %}" alt="A white heart with a black outline" class="w-16 h-16 sm:w-32 sm:h-32 m-1 sm:m-5">The Date Knights<img src="{% static 'date/images/heart-2.png' %}" alt="A white heart with a black outline" class="w-16 h-16 sm:w-32 sm:h-32 m-1 sm:m-5"></h1>
+                    </div>
+                    <!-- All images have been used with the consent of the contributors of this website -->
+                    <!-- Jess' Information -->
+                    <div class="flex flex-col bg-pink-100 rounded-xl m-4 p-6 w-80 h-min sm:w-80">
+                        <h2 class="text-4xl text-center mb-3 font-semibold">Jess</h2>
+                        <img src="{% static 'date/images/jess.png' %}" alt="An image of Jess" class="w-5/6 m-2 self-center">
+                        <p class="m-2">Jess is a Frontend Developer passionate about creating positive user experiences by developing visually appealing and responsive user interfaces. Experienced in HTML, CSS & JavaScript, she thrives on turning innovative ideas into engaging digital experiences. Jess confidently led the front-end team on this project and created a beautiful love-themed design. Jess’ collaborative approach has made everyone feel welcome and included and helped us form a cohesive group. </p>
+                        <div class="flex flex-row justify-center mt-5">
+                            <a href="https://github.com/JessicaJuliet" target="_blank"" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="mb-2 mx-2 inline-block rounded-full px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out bg-rose-600 hover:bg-rose-300" >
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-9"
+                                fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jessicaakomfrah/" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="mb-2 mx-2 inline-block rounded-full px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out bg-rose-600 hover:bg-rose-300">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-9"
+                                fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div> 
+                    <!-- Nate's Information -->
+                    <div class="flex flex-col bg-pink-100 rounded-xl m-4 p-6 w-80 h-min sm:w-80">
+                        <h2 class="text-4xl text-center mb-3 font-semibold">Nate</h2>
+                        <img src="{% static 'date/images/nate.jpg' %}" alt="A picture of Nate" class="w-5/6 m-2 self-center">
+                        <p class="m-2">Nate loves building projects in Django, React and anything Python or JS and a whole range of projects he is working on. Nate was the natural decision as a scrum master for this project and he has impressed all of us with his wide range of knowledge and ability to problem solve and root out any problems. He has been the go-to person when any of us need help and has led the way with implementing the backend logic for this project as well as being a quiet supporter of the heart-led design.</p>
+                        <div class="flex flex-row justify-center mt-5">
+                            <a href="https://github.com/Redsskull" target="_blank"" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="mb-2 mx-2 inline-block rounded-full px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out bg-rose-600 hover:bg-rose-300" >
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-9"
+                                fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/redsskull/" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="mb-2 mx-2 inline-block rounded-full px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out bg-rose-600 hover:bg-rose-300">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-9"
+                                fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div> 
+                    <!-- Dima's Information -->
+                    <div class="flex flex-col bg-pink-100 rounded-xl m-4 p-6 w-80 h-min sm:w-80">
+                        <h2 class="text-4xl text-center mb-3 font-semibold">Dima</h2>
+                        <img src="{% static 'date/images/dima.jpg' %}" alt="An image of a letter" class="w-5/6 m-2 self-center">
+                        <p class="m-2">Dima is a full-stack developer, proficient in using Django and Flask for the backend and employing HTML, CSS, and JS for the frontend. He has experience working collaboratively and independently. Dima has been one of the core contributors to the project and quickly came up with a backend design for the project and has been quietly and diligently working on this. He has been readily available to answer questions and help the frontend team with their backend queries whenever it was needed.</p>
+                        <div class="flex flex-row justify-center mt-5">
+                            <a href="https://github.com/Dima-Bulavenko" target="_blank"" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="mb-2 mx-2 inline-block rounded-full px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out bg-rose-600 hover:bg-rose-300" >
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-9"
+                                fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/dima-bulavenko-07a162239/" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="mb-2 mx-2 inline-block rounded-full px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out bg-rose-600 hover:bg-rose-300">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-9"
+                                fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div> 
+                    <!-- Amy's information -->
+                    <div class="flex flex-col bg-pink-100 rounded-xl m-4 p-6 w-80 h-min sm:w-80">
+                        <h2 class="text-4xl text-center mb-3 font-semibold">Amy</h2>
+                        <img src="{% static 'date/images/amy.jpg' %}" alt="A picture of Amy" class="w-5/6 m-2 self-center">
+                        <p class="m-2">Amy has been a Maths teacher for nearly ten years and is now career-changing to software development. She enjoys the problem-solving and creative aspects of Maths and hopes to apply this love to the field of programming and web applications. Amy is early in this transition but has been able to design and code this “About us” page. She has been a team player throughout, regularly contributing to project ideas and volunteering to do tasks to get the project completed. </p>    
+                        <div class="flex flex-row justify-center mt-5">
+                            <a href="https://github.com/AmyB173" target="_blank"" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="mb-2 mx-2 inline-block rounded-full px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out bg-rose-600 hover:bg-rose-300" >
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-9"
+                                fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/amy-bergstrom-068a26297/" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="mb-2 mx-2 inline-block rounded-full px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out bg-rose-600 hover:bg-rose-300">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-9"
+                                fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div> 
+                    <!-- Mika's information -->
+                    <div class="flex flex-col bg-pink-100 rounded-xl m-4 p-6 w-80 h-min sm:w-80">
+                        <h2 class="text-4xl text-center mb-3 font-semibold">Mika</h2>
+                        <img src="{% static 'date/images/mika.png' %}" alt="A picture of Mika" class="w-5/6 m-2 self-center">
+                        <p class="m-2">Mika is a nurse transitioning to software development. She loves learning new, difficult things and considers herself “a programmer embracing their cognitive masochism”. Mika combines her two passions by developing projects relating to the medical field.  Mika’s enthusiasm for this project has been clear from the start and she has injected a sense of pace and movement to keep the momentum going. Mika has helped design the look of the website, code the footer and write the readme. </p>
+                        <div class="flex flex-row justify-center mt-5">
+                            <a href="https://github.com/mikavir" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="mb-2 mx-2 inline-block rounded-full px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out bg-rose-600 hover:bg-rose-300" >
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-9"
+                                fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mikaela-virtucio" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="mb-2 mx-2 inline-block rounded-full px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out bg-rose-600 hover:bg-rose-300">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-9"
+                                fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div> 
+                    <!-- Yagavi's Information -->
+                    <div class="flex flex-col bg-pink-100 rounded-xl m-4 p-6 w-80 h-min sm:w-80">
+                        <h2 class="text-4xl text-center mb-3 font-semibold">Yagavi</h2>
+                        <img src="{% static 'date/images/yagavi.jpg' %}" alt="A picture of Yagavi" class="w-5/6 m-2 self-center">
+                        <p class="m-2">Yagavi is a dedicated stay-at-home mom who has always harboured a deep passion for coding. She thrives in collaborative environments, making her an excellent team player. With her unwavering determination and newfound skills, she aspires to carve out a successful career in coding, showcasing the perfect blend of maternal warmth and technical prowess. Yagavi was a great team player on this project by injecting her ideas throughout, coding the navigation bar and designing the logo.</p>
+                        <div class="flex flex-row justify-center mt-5">
+                            <a href="https://github.com/Yagavi1994" target="_blank"" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="mb-2 mx-2 inline-block rounded-full px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out bg-rose-600 hover:bg-rose-300" >
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-9"
+                                fill="currentColor"
+                                viewBox="0 0 24 24">2093
+                                <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yagavi-kannadhasan-7538409b" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="mb-2 mx-2 inline-block rounded-full px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out bg-rose-600 hover:bg-rose-300">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-9"
+                                fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>         
                 </div>
             </div>
 
