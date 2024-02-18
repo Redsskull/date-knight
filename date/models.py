@@ -151,7 +151,7 @@ def create_default_date_ideas(sender, **kwargs):
             "name": "Evening Boat Cruise",
             "description": "Look for a local boat tour or cruise company offering nighttime excursions along the coastline. Embark on a romantic boat ride with your partner, enjoy the sea breeze and stunning views of the shoreline, and create unforgettable memories together on the water.",
             "budget": 2,
-            "place": "seaside",
+            "place": "beach",
             "time": "night",
         },
         {
@@ -172,7 +172,7 @@ def create_default_date_ideas(sender, **kwargs):
             "name": "Private Beach Horseback Riding",
             "description": "Arrange for a private horseback riding excursion along the shoreline with your partner. Ride majestic horses along sandy beaches, through rolling dunes, and along scenic coastal trails for a romantic and unforgettable experience.",
             "budget": 3,
-            "place": "seaside",
+            "place": "beach",
             "time": "day",
         },
         {
@@ -193,9 +193,24 @@ def create_default_date_ideas(sender, **kwargs):
             "name": "Moonlit Sailing Excursion",
             "description": " Embark on a private sailing excursion under the moonlit sky with your partner. Glide across the water in a luxury sailboat, enjoying the gentle sea breeze and breathtaking views of the moon reflecting off the water.",
             "budget": 3,
-            "place": "seaside",
+            "place": "beach",
             "time": "night",
         },
+        {
+          "name": "Park Yoga Session",
+          "description": "Bring a couple of yoga mats and enjoy a relaxing yoga session in the park. This is a great way to unwind, get some exercise, and enjoy the beautiful surroundings.",
+          "budget": 1,
+          "place": "park",
+          "time": "day",
+        },
+        {
+          "name": "Park Bird Watching",
+          "description": "Bring a pair of binoculars and enjoy bird watching in the park. This is a peaceful and relaxing way to spend the day and enjoy nature.",
+          "budget": 1,
+          "place": "park",
+          "time": "day",
+         },
+ 
     ]
     if sender.name == 'date':
         for idea in date_ideas:
