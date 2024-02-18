@@ -72,24 +72,12 @@
                     </button>
                 </form>
                 <!-- Results -->
-                {% if date_ideas %}
-                    <div class="mt-9">
-                        <h2 class="text-2xl font-bold mb-4 text-rose-500">Date Ideas</h2>
-                        <div class="space-y-2 grid gap-2 md:gap-5 md:grid-cols-2">
-                            {% for idea in date_ideas %}
-                                <div class="mt-9" id="date-ideas-container">
-                                    <div class="list-disc list-inside space-y-2 grid grid-cols-2 gap-5" id="date-ideas-list">
-                                        <!-- Date ideas will be inserted here by the JavaScript code -->
-                                    </div>
-                                </div>
-                                <!-- <div class="bg-rose-50 p-5">
-                                    <h2 class="font-bold text-gray-700 text-lg mb-4">&#128161; {{ idea.name }}</h2>
-                                    <p class="text-gray-600 px-3">{{ idea.description }}</p>
-                                </div> -->
-                            {% endfor %}
-                        </div>
-                    </div>
-                {% endif %}
+                  <div class="mt-9" id="date-ideas-container">
+                <h2 class="text-2xl font-bold mb-4 text-rose-500">Date Ideas:</h2>
+                <div class="list-disc list-inside space-y-2 grid grid-cols-2 gap-5" id="date-ideas-list">
+                    <!-- Date ideas will be inserted here by the JavaScript code -->
+                </div>
+            </div>
             </div>
         </section>
         {% endblock %}
