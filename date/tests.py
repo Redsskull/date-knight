@@ -4,11 +4,13 @@ from date.models import DateIdea
 
 class DateIdeaTestCase(TestCase):
     def setUp(self):
-        DateIdea.objects.create(name="Test Idea", 
-                                description="This is a test idea",
-                                budget=1,
-                                place="city",
-                                time="day")
+        DateIdea.objects.create(
+            name="Test Idea",
+            description="This is a test idea",
+            budget=1,
+            place="city",
+            time="day",
+        )
 
     def test_date_idea(self):
         test_idea = DateIdea.objects.get(name="Test Idea")
@@ -16,3 +18,12 @@ class DateIdeaTestCase(TestCase):
         self.assertEqual(test_idea.budget, 1)
         self.assertEqual(test_idea.place, "city")
         self.assertEqual(test_idea.time, "day")
+
+    def test_default_field_value(self):
+        entry_with_default_fields = DateIdea.objects.create(
+            name="Idea with default values", description="Description Idea with default values"
+        )
+
+        self.assertEqual(entry_with_default_fields.budget, 1)
+        self.assertEqual(entry_with_default_fields.place, "city")
+        self.assertEqual(entry_with_default_fields.time, "day")
