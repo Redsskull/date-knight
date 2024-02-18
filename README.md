@@ -108,3 +108,34 @@ We have generated possible date ideas based on user choices:
 |        |          | Beach      | Evening Boat Cruise               | Look for a local boat tour or cruise company offering nighttime excursions along the coastline. Embark on a romantic boat ride with your partner, enjoy the sea breeze and stunning views of the shoreline, and create unforgettable memories together on the water.              |
 |        |          | Park       | Fire Pit Romance                 | If the park allows it, bring along some firewood and start a small campfire in a designated fire pit area. Roast marsh
 
+
+## Tools & Technologies Used
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+- [CSS](https://en.wikipedia.org/wiki/CSS) used for the site design and layout.
+- [Python](https://www.python.org/) used for the backend.
+- [Django-Tailwind](https://django-tailwind.readthedocs.io/en/latest/installation.html) used as a framework for backend and front-end CSS framework for modern responsiveness.
+- [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) used for making the form.
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) used for interactiveness.
+- [JQuery](https://jquery.com/) used as a framework for JavaScript.
+- [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) as a template network.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [GitHub](https://github.com) used for secure online code storage.
+- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [VScode](https://code.visualstudio.com/) used as a IDE for development.
+- [Balsamiq](https://balsamiq.com/wireframes) used to make wireframes.
+- [DevTools](https://developer.chrome.com/docs/devtools) used to debug.
+- [Heroku](https://www.heroku.com/) used to host deployed site.
+- [PostgreSQL](https://www.postgresql.org/docs/15/install-procedure.html) used for online database.
+- [Google Sheets](https://docs.google.com/spreadsheets/u/0/create) to draw a table for generated ideas.
+
+
+## Contributors
+
+- [Nate](https://github.com/Redsskull)
+- [Dima](https://github.com/Dima-Bulavenko)
+- [Jessica](https://github.com/JessicaJuliet)
+- [Amy](https://github.com/AmyB173)
+- [Mikaela](https://github.com/mikavir)
+- [Yagavi](https://github.com/Yagavi1994)
+
+## Acknowledgement 
