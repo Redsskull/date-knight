@@ -36,8 +36,6 @@ ALLOWED_HOSTS = ['dateknight-38b25c76684e.herokuapp.com', '127.0.0.1',]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 
-os.environ['NEW_RELIC_CONFIG_FILE'] = 'newrelic.ini'
-
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 

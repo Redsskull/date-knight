@@ -196,8 +196,93 @@ def create_default_date_ideas(sender, **kwargs):
             "place": "seaside",
             "time": "night",
         },
+        {
+            "name": "Park Yoga Sessions",
+            "description": "Bring a couple of yoga mats and enjoy a relaxing yoga session in the park. This is a great way to unwind, get some exercise, and enjoy the beautiful surroundings.",
+            "budget": 1,
+            "place": "park",
+            "time": "day",
+        },
+        {
+            "name": "Stargazing Picnic",
+            "description": "Bring along a cozy blanket, some homemade snacks, and a thermos of hot cocoa. Find a quiet spot in the park away from city lights, lay out your blanket, and enjoy the beauty of the night sky together. Spend the evening cuddling under the stars, spotting constellations, and sharing stories.",
+            "budget": 1,
+            "place": "park",
+            "time": "night",
+        },
+        {
+            "name": "Outdoor Games",
+            "description": "Bring along some fun outdoor games like frisbee, badminton, or a football to play together in the park. It's a great way to stay active and have some friendly competition.",
+            "budget": 2,
+            "place": "park",
+            "time": "day",
+        },
+        {
+            "name": "Fire Pit Romance",
+            "description": "If the park allows it, bring along some firewood and start a small campfire in a designated fire pit area. Roast marshmallows, make s'mores, and cozy up together next to the warm fire.",
+            "budget": 2,
+            "place": "park",
+            "time": "night",
+        },
+        {
+            "name": "Exclusive Horse-Drawn Carriage Ride",
+            "description": "Arrange for an exclusive horse-drawn carriage ride through the park. Snuggle up with your date as you glide through the picturesque scenery, enjoying the elegance and romance of a bygone era.",
+            "budget": 3,
+            "place": "park",
+            "time": "day",
+        },
+        {
+            "name": "Fireworks Display and Champagne Toast",
+            "description": "Arrange for a private fireworks display in the park to dazzle and impress your date. Toast to your love with champagne as you watch the spectacular show light up the night sky.",
+            "budget": 3,
+            "place": "park",
+            "time": "night",
+        },
+        {
+            "name": "Seaside Picnic Delight",
+            "description": "Pack a simple yet delicious picnic basket with sandwiches, fruits, and refreshing drinks. Spread out a cozy blanket on the sandy shores, bask in the sun, and enjoy a leisurely picnic with your toes in the sand.",
+            "budget": 1,
+            "place": "beach",
+            "time": "day",
+        },
+        {
+            "name": "Stargazing Serenade",
+            "description": "Bring a blanket and lay down on the beach under the twinkling night sky. Gaze at the stars and listen to the soothing sound of waves. Bring along a telescope if available, and spend the evening spotting constellations and sharing stories.",
+            "budget": 1,
+            "place": "beach",
+            "time": "night",
+        },
+        {
+            "name": "Kayaking Adventure",
+            "description": "Rent a tandem kayak and paddle together along the serene coastline. Explore hidden coves, observe marine life, and enjoy the beautiful scenery around you. Take breaks to swim, snorkel, or simply relax on the sandy shores.",
+            "budget": 2,
+            "place": "beach",
+            "time": "day",
+        },
+        {
+            "name": "Beach Bonfire Bonanza",
+            "description": "Set up a cozy bonfire on the beach with blankets and cushions around it. Roast marshmallows, make s'mores, and cuddle up by the fire as you listen to the waves crashing against the shore. Bring along a guitar for some romantic beachside serenading.",
+            "budget": 2,
+            "place": "beach",
+            "time": "night",
+        },
+        {
+            "name": "Surfing Safari",
+            "description": "Sign up for a beginner's surfing lesson together and catch some waves. Laugh, splash, and enjoy the thrill of riding the waves side by side. Afterward, relax with a beachside lunch at a nearby cafe, recounting your adventurous escapades.",
+            "budget": 3,
+            "place": "beach",
+            "time": "day",
+        },
+        {
+            "name": "Beachside Dinner Extravaganza",
+            "description": "Reserve a table at a beachfront restaurant renowned for its seafood cuisine. Enjoy a candlelit dinner with the sound of crashing waves as your backdrop. Toast to your love with fine wine and indulge in delectable dishes while savoring the romantic ambiance of the beach at night.",
+            "budget": 3,
+            "place": "beach",
+            "time": "night",
+        },
     ]
     if sender.name == 'date':
+        DateIdea.objects.all().delete()
         for idea in date_ideas:
             DateIdea.objects.get_or_create(**idea)
 
