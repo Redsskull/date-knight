@@ -23,7 +23,9 @@
                 <div id="logo-bar">
                     <div id="logo-container">
                         <div id="logo-image">
-                            <img src="{% static 'date/images/nav-logo.png' %}" alt="two hearts interlinked with website name below it">
+                            <a href="{% url 'home' %}" >
+                                <img src="{% static 'date/images/nav-logo.png' %}" alt="two hearts interlinked with website name below it">
+                            </a>
                         </div>
                         <div id="logo-slogan">
                             <p>Find Your Perfect Date</p>
@@ -99,7 +101,7 @@
         <footer class="m-4">
             <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div class="sm:flex sm:items-center sm:justify-between">
-                    <a href="index" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <a href="{% url 'home' %}" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                         <img src="{% static 'date/images/footer-logo.png' %}" class="h-9 mt-3" alt="date knight Logo" />
                         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-bg-rose-400">DateKnight</span>
                     </a>
@@ -114,7 +116,7 @@
                             </button>
                         </li>
                         <li class="mx-1">
-                            <a href="about">
+                            <a href="{% url 'about' %}">
                                 <button type="button" data-te-ripple-init data-te-ripple-color="light" class="mb-2 inline-block rounded-lg px-4 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out bg-rose-500 hover:bg-rose-400 hover:transition ease-in-out delay-100" >
                                     About Us!
                                 </button>
