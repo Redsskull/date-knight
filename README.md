@@ -1,4 +1,7 @@
 # Date-Knight
+
+ **The Date Knight *saving* you from your boring dates!**
+ 
  A responsive web application designed to ignite the spark of romance and inspire unforgettable moments for couples by generating personalised date ideas.
 
 ## UX
@@ -128,14 +131,36 @@ We have generated possible date ideas based on user choices:
 - [PostgreSQL](https://www.postgresql.org/docs/15/install-procedure.html) used for online database.
 - [Google Sheets](https://docs.google.com/spreadsheets/u/0/create) to draw a table for generated ideas.
 
+## Credit
+### Media 
+- [Pexels](https://www.pexels.com/photo/man-in-black-long-sleeve-shirt-sitting-on-chair-4255484/) - Hero Image
 
-## Contributors
+## Date Knight Contributors
 
-- [Nate](https://github.com/Redsskull)
-- [Dima](https://github.com/Dima-Bulavenko)
-- [Jessica](https://github.com/JessicaJuliet)
-- [Amy](https://github.com/AmyB173)
-- [Mikaela](https://github.com/mikavir)
-- [Yagavi](https://github.com/Yagavi1994)
+### [Nate](https://www.linkedin.com/in/redsskull/)
+
+Nate loves building projects in Django, React and anything Python or JS and a whole range of projects he is working on. Nate was the natural decision as a scrum master for this project and he has impressed all of us with his wide range of knowledge, and ability to problem solve and root out any problems. He has been the go-to person when any of us need help and has led the way with the backend logic for this project as well as being a quiet supporter of the heart-led design.
+
+### [Dima](https://www.linkedin.com/in/dima-bulavenko-07a162239/)
+
+Dima is a full-stack developer, proficient in using Django and Flask for the backend of his applications, and employing HTML, CSS, and JS for the frontend. He has experience working collaboratively in teams and independently. Dima has been one of the core contributors to the project and quickly came up with a backend design for the project and has been quietly and diligently working on this. He has been readily available to answer questions and help the frontend team with their backend queries whenever it was needed.
+
+### [Jessica](https://www.linkedin.com/in/jessicaakomfrah/)
+
+Jess is a Frontend Developer passionate about creating positive user experiences by developing visually appealing and responsive user interfaces. Experienced in HTML, CSS & JavaScript, she thrives on turning innovative ideas into engaging digital experiences. Jess confidently led the front-end team on this project and created a beautiful love-themed design. Jess’ collaborative approach has made everyone feel welcome and included which helped us form a cohesive group.
+
+### [Amy](https://www.linkedin.com/in/amy-bergstrom-068a26297/)
+
+Amy is a former Maths teacher transitioning to software development. She enjoys the problem-solving and creative aspects of Maths and hopes to apply this love to the field of programming and web applications. Amy is early in this transition but has been able to design and code the team’s “About Us” page as well as being on-hand to contribute to project ideas.
+
+### [Mikaela](https://www.linkedin.com/in/mikaela-virtucio/)
+
+Mika is a nurse transitioning to software development. She is early in the process but has already put her all into this new direction. She loves learning new, difficult things and considers herself “a programmer embracing their cognitive masochism”. Mika combines her two passions by developing projects relating to the medical field.  Mika’s enthusiasm for this project has been clear from the start and she has injected a sense of pace and movement to keep the momentum going. Mika has been on hand to design the look of the website, code the footer and write the readme.
+
+### [Yagavi](www.linkedin.com/in/yagavi-kannadhasan-7538409b)
+
+Yagavi is a dedicated stay-at-home mom who has always harboured a deep passion for coding. She thrives in collaborative environments, making her an excellent team player. With her unwavering determination and newfound skills, she aspires to carve out a successful career in coding, showcasing the perfect blend of maternal warmth and technical prowess. Yagavi was a great team player on this project and injected her style and ideas into this project.
 
 ## Acknowledgement 
+- We are grateful for Code Institute Hackathon team for facilitating this event and allowing a great team to form.
+- We are grateful for our team-mates for sharing of knowledge and expertise, as well as making the time to collobarate and finish the project.

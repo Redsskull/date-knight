@@ -889,26 +889,12 @@ select {
   height: 100vh;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-min {
-  height: -moz-min-content;
-  height: min-content;
 }
 
 .max-h-\[450px\] {
   max-height: 450px;
 }
 
-.min-h-min {
-  min-height: -moz-min-content;
-  min-height: min-content;
 }
 
 .w-4 {
@@ -945,6 +931,14 @@ select {
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.max-w-\[450px\] {
+  max-width: 450px;
+}
+
+.max-w-\[500px\] {
+  max-width: 500px;
 }
 
 .translate-y-\[-200px\] {
@@ -990,6 +984,10 @@ select {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1090,8 +1088,21 @@ select {
   background-position: center;
 }
 
+.bg-top {
+  background-position: top;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2 {
@@ -1143,6 +1154,21 @@ select {
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 .text-center {
@@ -1305,16 +1331,6 @@ select {
     display: flex;
   }
 
-  .sm\:h-32 {
-    height: 8rem;
-  }
-
-  .sm\:w-32 {
-    width: 8rem;
-  }
-
-  .sm\:w-80 {
-    width: 20rem;
   }
 
   .sm\:items-center {
@@ -1346,8 +1362,45 @@ select {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-\[-200px\] {
+    margin-bottom: -200px;
+  }
+
+  .md\:h-\[auto\] {
+    height: auto;
+  }
+
+  .md\:h-\[100\%\] {
+    height: 100%;
+  }
+
+  .md\:max-h-\[650px\] {
+    max-height: 650px;
+  }
+
+  .md\:min-h-\[600px\] {
+    min-height: 600px;
+  }
+
   .md\:max-w-\[650px\] {
     max-width: 650px;
+  }
+
+  .md\:translate-y-\[-200px\] {
+    --tw-translate-y: -200px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .md\:bg-top {
+    background-position: top;
   }
 
   .md\:px-10 {
