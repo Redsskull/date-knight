@@ -155,7 +155,7 @@ Amy is a former Maths teacher transitioning to software development. She enjoys 
 
 ### [Mikaela](https://www.linkedin.com/in/mikaela-virtucio/)
 
-Mika is a nurse transitioning to software development. She is early in the process but has already put her all into this new direction. She loves learning new, difficult things and considers herself “a programmer embracing their cognitive masochism”. Mika combines her two passions by developing projects relating to the medical field.  Mika’s enthusiasm for this project has been clear from the start and she has injected a sense of pace and movement to keep the momentum going. Mika has been on hand to design the look of the website, code the footer and write the readme.
+Mika is a nurse transitioning to software development. She has already put her all into this new direction. She loves learning new, difficult things and considers herself “a programmer embracing their cognitive masochism”. Mika combines her two passions by developing projects relating to the medical field.  Mika’s enthusiasm for this project has been clear from the start and she has injected a sense of pace and movement to keep the momentum going. Mika has been on hand to design the look of the website, code the footer and write the readme.
 
 ### [Yagavi](www.linkedin.com/in/yagavi-kannadhasan-7538409b)
 
@@ -163,4 +163,4 @@ Yagavi is a dedicated stay-at-home mom who has always harboured a deep passion f
 
 ## Acknowledgement 
 - We are grateful for Code Institute Hackathon team for facilitating this event and allowing a great team to form.
-- We are grateful for our team-mates for sharing of knowledge and expertise, as well as making the time to collobarate and finish the project.
+- We are grateful for our team-mates for sharing their knowledge and expertise, as well as making the time to collobarate and finish the project.
