@@ -21,9 +21,9 @@ $(document).ready(function() {
                 // Add each new date idea to the container
                 data.date_ideas.forEach(function(idea) {
                     container.append(
-                        '<div class="bg-rose-50 p-5">' +
-                            '<h2 class="font-bold text-gray-700 text-lg mb-4">&#128161; ' + idea.name + '</h2>' +
-                            '<p class="text-gray-600 px-3">' + idea.description + '</p>' +
+                        '<div>' +
+                            '<h2>&#128161; ' + idea.name + '</h2>' +
+                            '<p>' + idea.description + '</p>' +
                         '</div>'
                     );
                 });
