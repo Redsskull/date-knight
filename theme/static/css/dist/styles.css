@@ -894,10 +894,6 @@ select {
   height: min-content;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .min-h-min {
   min-height: -moz-min-content;
   min-height: min-content;
@@ -953,6 +949,10 @@ select {
 
 .list-disc {
   list-style-type: disc;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
