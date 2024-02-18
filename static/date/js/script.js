@@ -16,7 +16,7 @@ $(document).ready(function() {
                 container.empty();
 
                 // Add a CSS class to the container that makes the date ideas display in a grid
-                container.addClass('grid grid-cols-3 gap-4');
+                // container.addClass('grid grid-cols-3 gap-4');
 
                 // Add each new date idea to the container
                 data.date_ideas.forEach(function(idea) {
