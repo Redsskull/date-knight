@@ -837,6 +837,10 @@ select {
   margin-bottom: 2.25rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -853,10 +857,6 @@ select {
   margin-top: 2.25rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .block {
   display: block;
 }
@@ -867,10 +867,6 @@ select {
 
 .flex {
   display: flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .h-16 {
@@ -896,10 +892,6 @@ select {
 .h-min {
   height: -moz-min-content;
   height: min-content;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .min-h-min {
@@ -957,10 +949,6 @@ select {
 
 .list-disc {
   list-style-type: disc;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1326,10 +1314,6 @@ select {
   .md\:translate-y-\[-200px\] {
     --tw-translate-y: -200px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:bg-center {
