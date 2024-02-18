@@ -1,11 +1,8 @@
+from django.http import JsonResponse
 from django.shortcuts import redirect, render
 from django.contrib import messages
 from .forms import DateIdeaForm
 from .models import DateIdea
-
-# I know that we are going to create only one page for our project
-# but I think it'll be more convenient to create
-# a separate view for the home page and the date ideas page
 
 
 def home(request):
@@ -20,15 +17,21 @@ def home(request):
                 time=form_data['time']
             )
             if result.exists():  # if the result is not empty, it's a queryset of date ideas
-                date_ideas = result
+                date_ideas = list(result.values())
             else:  # if the result is empty, display a message to the user
                 messages.info(request, "No matching date ideas found. Please try different criteria.")
+                date_ideas = []
         else:
             messages.error(request, 'There was an error with the form.')
+            date_ideas = []
+
+        if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+            return JsonResponse({"date_ideas": date_ideas})
+
     else:
         form = DateIdeaForm()
 
-    return render(request, "index.html", {"form": form, "date_ideas": date_ideas})
+    return render(request, 'index.html', {'form': form, 'date_ideas': date_ideas})
 
 def about(request):
     return render(request, 'about.html')
