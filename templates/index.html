@@ -7,26 +7,23 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
-        {% block title %}
-            DateKnight
-        {% endblock %} 
+            {% block title %}
+                DateKnight
+            {% endblock %} 
         </title>
-
         {% tailwind_css %}
         <link rel="icon" type="image/png" href="{% static 'date/images/favicon.png' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'date/css/style.css' %}">
     </head>
 
     <body class="bg-rose-100">
-
         <!-- Navbar -->
         <header>
             <nav>
                 <div id="logo-bar">
                     <div id="logo-container">
                         <div id="logo-image">
-                            <img src="{% static 'date/images/nav-logo.png' %}"
-                            alt="two hearts interlinked with website name below it">
+                            <img src="{% static 'date/images/nav-logo.png' %}" alt="two hearts interlinked with website name below it">
                         </div>
                         <div id="logo-slogan">
                             <p>Find Your Perfect Date</p>
@@ -46,26 +43,24 @@
         {% if messages %}
             <ul class="messages">
                 {% for message in messages %}
-                    <li{% if message.tags %} class="p-2 mb-2 bg-rose-500 text-white rounded"{% endif %}>{{ message }}</li>
+                    <li {% if message.tags %} class="p-2 mb-2 bg-rose-500 text-white rounded"{% endif %}>{{ message }}</li>
                 {% endfor %}
             </ul>
         {% endif %}
+
         {% block content %}
             <!-- Form container -->
             <section class="flex justify-center items-center md:max-w-[650px] m-auto">
                 <div class="bg-white py-7 px-5 rounded-lg shadow-2xl md:py-16 md:px-10 translate-y-[-200px] mb-[-200px]">
-                    
-                    <!-- Title & description -->
                     <h1 class="text-4xl font-bold mb-3.5 text-center text-rose-500">
                         DateKnight
                     </h1>
-                    <!-- Resource: emojis: https://www.htmlsymbols.xyz/unicode/U+2728 -->
+                    <!-- Resource: emojis - https://www.htmlsymbols.xyz/unicode/U+2728 -->
                     <p class="text-gray-600 text-lg text-center mb-3.5">
                         First dates made effortless, sparks guaranteed! &#10024; <br>
                         Select the budget, place and time that your needs and we'll build your
                         perfect first date! &#x1F495;
                     </p>
-
                     <!-- Form -->
                     <form method="post" class="space-y-6 p-5" id="date-form">
                         {% csrf_token %}
@@ -74,24 +69,22 @@
                             Find Date Ideas
                         </button>
                     </form>
-
-                    {% if date_ideas %}
                     <!-- Results -->
-                    <div class="mt-9">
-                        <h2 class="text-2xl font-bold mb-4 text-rose-500">Date Ideas</h2>
-                        <div class="list-disc list-inside space-y-2 grid grid-cols-2 gap-5">
-                            {% for idea in date_ideas %}
-                                <div class="bg-rose-50 p-5">
-                                    <h2 class="font-bold text-gray-700 text-lg mb-4">&#128161; {{ idea.name }}</h2>
-                                    <p class="text-gray-600 px-3">{{ idea.description }}</p>
-                                </div>
-                            {% endfor %}
+                    {% if date_ideas %}
+                        <div class="mt-9">
+                            <h2 class="text-2xl font-bold mb-4 text-rose-500">Date Ideas</h2>
+                            <div class="list-disc list-inside space-y-2 grid grid-cols-2 gap-5">
+                                {% for idea in date_ideas %}
+                                    <div class="bg-rose-50 p-5">
+                                        <h2 class="font-bold text-gray-700 text-lg mb-4">&#128161; {{ idea.name }}</h2>
+                                        <p class="text-gray-600 px-3">{{ idea.description }}</p>
+                                    </div>
+                                {% endfor %}
+                            </div>
                         </div>
-                    </div>
                     {% endif %}
-
                 </div>
-            </section> <!-- end form-section -->
+            </section>
         {% endblock %}
 
         <!-- Footer -->
@@ -125,7 +118,6 @@
                 <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="index.html" class="hover:underline">DateKnight™</a>. All Rights Reserved.</span>
             </div>
         </footer>
-
     </body>
 </html>
 
