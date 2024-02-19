@@ -121,6 +121,53 @@ We have generated possible date ideas based on user choices:
 |        |           | Beach      | Moonlit Sailing Excursion       | Embark on a private sailing excursion under the moonlit sky with your partner. Glide across the water in a luxury sailboat, enjoying the gentle sea breeze and breathtaking views of the moon reflecting off the water                                                                                           |
 |        |           | Park       | Fireworks Display and Champagne Toast | Arrange for a private fireworks display in the park to dazzle and impress your date. Toast to your love with champagne as you watch the
 
+
+
+=======
+## Testing
+
+Our team has thoroughly evaluated the task management and project features through manual examination, testing every button and link to verify their functionality. By utilizing a range of browsers and devices during the testing phase, we ensure the application's dependability and ease of use across diverse platforms.
+
+### Unit tests
+Below is a unit test designed to evaluate the models and forms within our Django application.
+
+![style.css](./documentation/unit_tests.PNG)
+
+### Code Validation
+
+#### JavaScript Validation
+
+We employed the online tool [JSHint](https://jshint.com/) to validate the JavaScript code of Date-Knight. The code underwent validation seamlessly, without encountering any errors. This affirms that the JavaScript within Date-Knight adheres to recognized coding standards, thereby improving its reliability and performance.
+
+#### HTML Validation
+
+-   [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdateknight-38b25c76684e.herokuapp.com%2F)
+
+-   [about.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdateknight-38b25c76684e.herokuapp.com%2Fabout%2F)
+
+#### CSS Validation
+
+![style.css](./documentation/css_validation.PNG)
+
+
+### Responsiveness
+
+Date-Knight underwent extensive responsiveness testing using various software applications and online resources. The majority of the testing was conducted manually, utilizing [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) with multiple preset device dimensions available in the toolbar.
+
+![Site Responsive Design](./documentation/mockup.png)
+
+
+### Lighthouse testing
+
+#### [Index.html](https://pagespeed.web.dev/analysis/https-dateknight-38b25c76684e-herokuapp-com/4h9tbrra4q?form_factor=desktop)
+
+![index.html](./documentation/lighthouse_index.PNG)
+
+
+#### [about.html](https://pagespeed.web.dev/analysis/https-dateknight-38b25c76684e-herokuapp-com-about/mkhdlpdoek?form_factor=desktop)
+
+![about.html](./documentation/lighthouse_about.PNG)
+
 ## Features
 
 ### Existing Features
